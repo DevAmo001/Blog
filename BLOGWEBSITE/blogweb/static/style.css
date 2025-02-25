@@ -32,6 +32,13 @@ body {
   clear: both;
 }
 
+.read-more {
+  background-color: blue;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {   
     width: 100%;
