@@ -33,10 +33,13 @@ body {
 }
 
 .read-more {
-  background-color: blue;
+  background-color: rgb(58, 205, 231);
+  width: 100px;
+  height: 30px;
   padding: 10px;
   text-align: center;
   cursor: pointer;
+  border: none;
 }
 
 @media screen and (max-width: 800px) {
