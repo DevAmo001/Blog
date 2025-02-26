@@ -48,9 +48,3 @@ body {
     padding: 0;
   }
 }
-
-._button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}

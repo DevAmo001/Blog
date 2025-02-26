@@ -16,6 +16,20 @@
         <h1>{{ posts.title }}</h1>
         <h5>{{ posts.created_at }}</h5>
         <p>{{ posts.content}}</p>
+        <a href="{% url 'home' %}">
+          <button style="
+            height: 30px;
+            width: 100px;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+          " class="back-button">
+            Back
+          </button>
+        </a>
     </div>
   </div>
 </div>
