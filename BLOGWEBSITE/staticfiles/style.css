@@ -40,6 +40,8 @@ body {
   text-align: center;
   cursor: pointer;
   border: none;
+  color: white;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 800px) {
@@ -47,4 +49,10 @@ body {
     width: 100%;
     padding: 0;
   }
+}
+
+._button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
