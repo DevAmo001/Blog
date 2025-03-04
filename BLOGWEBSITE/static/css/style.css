@@ -20,10 +20,6 @@ body {
   width: 100%;
 }
 
-.card-container {
-  display: contents;
-}
-
 .card {
    background-color: white;
    padding: 20px;
@@ -34,6 +30,13 @@ body {
   content: "";
   display: table;
   clear: both;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
 }
 
 .read-more {
@@ -51,32 +54,4 @@ body {
 .read-more:hover {
   background-color: rgb(73, 73, 224);
   color: white;
-}
-
-.card {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.p {
-  width: 300px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px; 
-  padding: 20px;
-}
-
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
-  }
-}
-
-._button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
