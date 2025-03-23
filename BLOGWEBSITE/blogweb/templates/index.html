@@ -1,3 +1,5 @@
+
+
 {% load static %}
 
 <!DOCTYPE html>
@@ -6,7 +8,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>GalaxyXpert blog</title>
+    <title>{% block title %}GalaxyXpert blog{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500&amp;display=swap">
     <link rel="stylesheet" href="{% static 'assets/fonts/fontawesome-all.min.css' %}">
@@ -26,10 +28,10 @@
 
 <body class="font-monospace text-capitalize d-flex flex-column flex-grow-1 align-items-center bg-overlay img-fluid" style="width: 100%;height: 100%;max-width: none;min-width: auto;">
     <nav class="navbar navbar-expand-md bg-transparent d-flex flex-row justify-content-center align-items-center py-3 navigation" style="background: rgba(191,57,57,0.95);width: 100%;">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html"><span style="background: rgba(255,255,255,0);color: rgb(247,247,247);">GalaxyXpert</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="{% url 'home' %}"><span style="background: rgba(255,255,255,0);color: rgb(247,247,247);">GalaxyXpert</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-2">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active nav-link" href="blog.html" style="color: rgb(247,247,247);">BLOG</a></li>
+                    <li class="nav-item"><a class="nav-link active nav-link" href="{% url 'blog_page' %}" style="color: rgb(247,247,247);">BLOG</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html" style="color: rgb(247,247,247);">ABOUT</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html" style="color: rgb(247,247,247);">CONTACT</a></li>
                 </ul><a class="btn ms-md-2" role="button" href="#" style="height: 30px;padding-top: 2px;background: var(--bs-danger);color: rgb(255,255,255);" data-bs-toggle="modal" data-bs-target="#subscribeModal">Subscribe</a>
