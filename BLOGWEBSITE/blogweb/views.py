@@ -3,7 +3,7 @@ from .models import Posts
 
 def home(request):
   posts = Posts.objects.all()
-  return render(request, 'index.html',)
+  return render(request, 'index.html')
 
 def post(request, pk):
   posts = Posts.objects.get(id = pk)
