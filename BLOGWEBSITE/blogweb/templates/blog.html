@@ -29,8 +29,8 @@
             <div class="collapse navbar-collapse" id="navcol-2">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active nav-link" href="{% url 'blog_page' %}" style="color: rgb(247,247,247);">BLOG</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html" style="color: rgb(247,247,247);">ABOUT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html" style="color: rgb(247,247,247);">CONTACT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'about_page' %}" style="color: rgb(247,247,247);">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'contact_page' %}" style="color: rgb(247,247,247);">CONTACT</a></li>
                 </ul><a class="btn ms-md-2" role="button" href="#" style="height: 30px;padding-top: 2px;background: var(--bs-danger);color: rgb(255,255,255);" data-bs-toggle="modal" data-bs-target="#subscribeModal">Subscribe</a>
             </div>
         </div>
