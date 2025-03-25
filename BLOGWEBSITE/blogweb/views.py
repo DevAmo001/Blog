@@ -17,6 +17,10 @@ def contact(request):
   # posts = Posts.objects.all()
   return render(request, 'contact.html')
 
+def learn_more(request):
+  # posts = Posts.objects.all()
+  return render(request, 'learnmore.html')
+
 def post(request, pk):
   posts = Posts.objects.get(id = pk)
   return render(request, 'post.html', {'posts': posts})

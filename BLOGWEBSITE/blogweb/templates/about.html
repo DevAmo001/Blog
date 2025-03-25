@@ -1,44 +1,15 @@
-<!DOCTYPE html>
-<html data-bs-theme="light" lang="en">
+{% extends 'index.html' %}
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>GalaxyXpert blog</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500&amp;display=swap">
-    <link rel="stylesheet" href="assets/css/aos.min.css">
-    <link rel="stylesheet" href="assets/css/Banner-Heading-Image-images.css">
-    <link rel="stylesheet" href="assets/css/Navbar-Right-Links-icons.css">
-    <link rel="stylesheet" href="assets/css/untitled-1.css">
-    <link rel="stylesheet" href="assets/css/untitled-2.css">
-    <link rel="stylesheet" href="assets/css/untitled-3.css">
-    <link rel="stylesheet" href="assets/css/untitled-6.css">
-    <link rel="stylesheet" href="assets/css/untitled-7.css">
-    <link rel="stylesheet" href="assets/css/untitled-8.css">
-    <link rel="stylesheet" href="assets/css/untitled-9.css">
-    <link rel="stylesheet" href="assets/css/untitled.css">
-</head>
+{% block title %}About{% endblock %}
 
-<body class="font-monospace text-capitalize d-flex flex-column flex-grow-1 align-items-center bg-overlay img-fluid" style="width: 100%;height: 100%;max-width: none;min-width: auto;">
-    <nav class="navbar navbar-expand-md bg-transparent d-flex flex-row justify-content-center align-items-center py-3 navigation" style="background: rgba(191,57,57,0.95);width: 100%;">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html"><span style="background: rgba(255,255,255,0);color: rgb(247,247,247);">GalaxyXpert</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-2">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active nav-link" href="blog.html" style="color: rgb(247,247,247);">BLOG</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html" style="color: rgb(247,247,247);">ABOUT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html" style="color: rgb(247,247,247);">CONTACT</a></li>
-                </ul><a class="btn ms-md-2" role="button" style="height: 30px;padding-top: 2px;background: var(--bs-danger);color: rgb(255,255,255);" href="#" data-bs-toggle="modal" data-bs-target="#subscribeModal">Subscribe</a>
-            </div>
-        </div>
-    </nav>
+{% block content %}
     <h1 data-aos="fade-up" data-aos-once="true" style="color: rgb(255,255,255);position: relative;">About us</h1>
     <section class="py-4 py-xl-5" style="color: rgb(245,245,245);position: relative;">
         <div class="container">
             <div class="text-white border rounded border-0 p-4 p-md-5" data-aos="fade-up" data-aos-once="true" id="about" style="background: rgb(11,109,109);">
                 <h2 class="fw-bold text-white mb-3">Welcome to GalaxyXpert Software Solutions: Innovating Agriculture Through Technology</h2>
                 <p class="mb-4">At GalaxyXpert, we specialize in empowering farmers, agribusinesses, and enterprises with innovative agritech and custom software solutions. <br><br>Our mission is to drive growth, enhance productivity, and support sustainability in agriculture through tailor-made services.We specialize in leveraging advanced technologies such as AI and IoT to create smart solutions for agriculture. <br><br>Our goal is to help farmers increase productivity, reduce costs, and promote sustainable practices with the power of technology.In addition to agritech, we offer custom software solutions across various industries to help businesses stay competitive through innovation and efficiency.</p>
-                <div class="my-3"><a class="btn btn-primary btn-lg me-2" role="button" href="learnmore.html">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20" fill="none">
+                <div class="my-3"><a class="btn btn-primary btn-lg me-2" role="button" href="{% url 'learnmore_page' %}">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20" fill="none">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2929 5.29289C12.6834 4.90237 13.3166 4.90237 13.7071 5.29289L17.7071 9.29289C18.0976 9.68342 18.0976 10.3166 17.7071 10.7071L13.7071 14.7071C13.3166 15.0976 12.6834 15.0976 12.2929 14.7071C11.9024 14.3166 11.9024 13.6834 12.2929 13.2929L14.5858 11H3C2.44772 11 2 10.5523 2 10C2 9.44772 2.44772 9 3 9H14.5858L12.2929 6.70711C11.9024 6.31658 11.9024 5.68342 12.2929 5.29289Z" fill="currentColor"></path>
                         </svg></a></div>
             </div>
@@ -63,9 +34,4 @@
             </div>
         </div>
     </div>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/aos.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-</body>
-
-</html>
+    {% endblock %}

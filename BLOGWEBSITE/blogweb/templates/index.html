@@ -38,6 +38,8 @@
             </div>
         </div>
     </nav>
+
+    {% block content %}
     <div class="modal fade" role="dialog" tabindex="-1" id="subscribeModal" aria-labelledby="modalLabel" aria-hidden="true" style="background: rgba(255,255,255,0.21);">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -93,6 +95,7 @@
             </div>
         </footer>
     </div>
+    {% endblock %}
     <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
     <script src="{% static 'assets/js/aos.min.js' %}"></script>
     <script src="{% static 'assets/js/bs-init.js' %}"></script>

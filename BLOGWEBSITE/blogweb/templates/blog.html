@@ -1,40 +1,10 @@
+{% extends 'index.html' %}
+
 {% load static %}
 
-<!DOCTYPE html>
-<html data-bs-theme="light" lang="en">
+{% block title %} Blog {% endblock %}
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>GalaxyXpert blog</title>
-    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500&amp;display=swap">
-    <link rel="stylesheet" href="{% static 'assets/fonts/fontawesome-all.min.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/aos.min.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/Banner-Heading-Image-images.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/Navbar-Right-Links-icons.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/untitled-1.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/untitled-2.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/untitled-3.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/untitled-6.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/untitled-7.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/untitled-8.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/untitled-9.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/untitled.css' %}">
-</head> 
-
-<body class="font-monospace text-capitalize d-flex flex-column flex-grow-1 align-items-center bg-overlay img-fluid" style="width: 100%;height: 100%;max-width: none;min-width: auto;">
-    <nav class="navbar navbar-expand-md bg-transparent d-flex flex-row justify-content-center align-items-center py-3 navigation" style="background: rgba(191,57,57,0.95);width: 100%;">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="{% url 'home' %}"><span style="background: rgba(255,255,255,0);color: rgb(247,247,247);">GalaxyXpert</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-2">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active nav-link" href="{% url 'blog_page' %}" style="color: rgb(247,247,247);">BLOG</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{% url 'about_page' %}" style="color: rgb(247,247,247);">ABOUT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{% url 'contact_page' %}" style="color: rgb(247,247,247);">CONTACT</a></li>
-                </ul><a class="btn ms-md-2" role="button" href="#" style="height: 30px;padding-top: 2px;background: var(--bs-danger);color: rgb(255,255,255);" data-bs-toggle="modal" data-bs-target="#subscribeModal">Subscribe</a>
-            </div>
-        </div>
-    </nav>
+{% block content %}
     <div>
         <section data-aos="fade-up" data-aos-once="true" class="py-4 py-xl-5" style="position: relative;">
             <div class="container" style="height: auto;">
@@ -90,9 +60,4 @@
             </div>
         </div>
     </div>
-    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'assets/js/aos.min.js' %}"></script>
-    <script src="{% static 'assets/js/bs-init.js' %}"></script>
-</body>
-
-</html>
+{% endblock %}
