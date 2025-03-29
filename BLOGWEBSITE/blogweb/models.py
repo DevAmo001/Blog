@@ -9,4 +9,4 @@ class BlogPosts(models.Model):
   likes = models.IntegerField(default = 0)
   comments = models.IntegerField(default = 0)
   author = models.CharField(max_length=100)
-  image = models.ImageField(upload_to='images/', default='images/default.jpg')
+  image = models.ImageField(upload_to='static/assets/img', default='static/assets/img/Code-AI.png')
