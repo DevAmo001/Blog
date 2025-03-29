@@ -6,7 +6,7 @@
 
 {% block content %}
 
-{% for post in BlogPost %}
+<!-- {% for post in BlogPost %} -->
     <div>
         <section data-aos="fade-up" data-aos-once="true" class="py-4 py-xl-5" style="position: relative;">
             <div class="container" style="height: auto;">
@@ -14,16 +14,16 @@
                     <div class="row g-0">
                         <div class="col-md-6" id="main-column">
                             <div class="text-white p-4 p-md-5">
-                                <h2 class="fw-bold text-white mb-3">Automated Code Generation</h2>
-                                <p class="mb-4">AI tools like Github Copilot assist developers by suggesting code snippets, reducing development time and improving efficiency.</p>
+                                <h2 class="fw-bold text-white mb-3">{{ post.title }}</h2>
+                                <p class="mb-4">{{ post.content }}</p>
                             </div>
                             <div style="height: auto;width: 100%;color: rgb(255,255,255);">
                                 <div class="row" style="width: 100%;height: auto;margin-right: 0px;margin-left: 0px;">
                                     <div class="col d-flex flex-column justify-content-start align-items-center">
-                                        <p class="likes" style="margin-bottom: 5px;">100 likes</p><i class="far fa-heart like-icon" style="font-size: 23px;"></i>
+                                        <p class="likes" style="margin-bottom: 5px;">{{ post.likes }}</p><i class="far fa-heart like-icon" style="font-size: 23px;"></i>
                                     </div>
                                     <div class="col d-flex flex-column justify-content-start align-items-center" style="width: 156px;">
-                                        <p class="comment" style="margin-bottom: 5px;">50 comments</p><i class="far fa-comment comment-icon" style="font-size: 23px;"></i>
+                                        <p class="comment" style="margin-bottom: 5px;">{{ post.comments }}</p><i class="far fa-comment comment-icon" style="font-size: 23px;"></i>
                                     </div>
                                     <div class="col d-flex flex-column justify-content-start align-items-center">
                                         <p class="share" style="margin-bottom: 5px;">share</p><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20" fill="none" class="share-icon" style="font-size: 23px;">
@@ -37,13 +37,13 @@
                         <div class="col">
                             <div></div>
                         </div>
-                        <div class="col-md-6 order-first order-md-last" style="min-height: 250px;"><img class="w-100 h-100 fit-cover" src="{% static 'assets/img/Code-AI.png' %}"></div>
+                        <div class="col-md-6 order-first order-md-last" style="min-height: 250px;"><img class="w-100 h-100 fit-cover" src="{{ post.image }}"></div>
                     </div>
                 </div>
             </div>
         </section>
     </div>
-{% endfor %}
+<!-- {% endfor %} -->
 
     <div class="modal fade" role="dialog" tabindex="-1" id="subscribeModal" aria-labelledby="modalLabel" aria-hidden="true" style="background: rgba(255,255,255,0.21);">
         <div class="modal-dialog" role="document">
