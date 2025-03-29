@@ -5,6 +5,8 @@
 {% block title %} Blog {% endblock %}
 
 {% block content %}
+
+{% for post in BlogPost %}
     <div>
         <section data-aos="fade-up" data-aos-once="true" class="py-4 py-xl-5" style="position: relative;">
             <div class="container" style="height: auto;">
@@ -41,6 +43,8 @@
             </div>
         </section>
     </div>
+{% endfor %}
+
     <div class="modal fade" role="dialog" tabindex="-1" id="subscribeModal" aria-labelledby="modalLabel" aria-hidden="true" style="background: rgba(255,255,255,0.21);">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
