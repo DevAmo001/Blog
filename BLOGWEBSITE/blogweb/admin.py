@@ -10,4 +10,4 @@ class BlogPostsAdmin(admin.ModelAdmin):
     ordering = ('-date',)
 
 
-admin.site.register(BlogPosts, BlogPostsAdmin)
+admin.site.register(BlogPosts, BlogPostsAdmin) 
